@@ -187,8 +187,15 @@
         width: calc(100% - 30px);
         margin: 0px 15px;
     }
-    
+
     .banner-title {
         padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .time_picker {
+        flex-direction: column !important;
+        row-gap: 15px;
     }
 }
