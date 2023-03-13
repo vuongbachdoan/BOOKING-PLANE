@@ -1,3 +1,18 @@
+@import url('../Assets/Fonts/Outfit/Outfit.css');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: #F4F2F9;
+}
+
 .wrapper-col {
   display: flex;
   flex-direction: column;
