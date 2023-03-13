@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/__base__.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/responsive.css">
+    <link rel="stylesheet" href="./booking.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header header_booking" id="header">
+        <nav class="navbar">
+            <span class="navbar__brand">
+                <img onclick="changePage('/')" src="../Assets/Icons/logo-light.svg" alt="app logo" class="app-logo">
+                <span class="langs">
+                    <img class="lang" src="../Assets//Icons//icon-vn.svg" alt="language icon">
+                    <img class="lang" src="../Assets//Icons//icon-us.svg" alt="language icon">
+                </span>
+            </span>
+            <ul class="navs">
+                <li class="nav">
+                    <a class="header_nav" href="#">Promotion</a>
+                </li>
+                <li class="nav">
+                    <a class="header_nav" href="#">Flight schedule</a>
+                </li>
+                <li class="nav">
+                    <a class="header_nav" href="#">About us</a>
+                </li>
+                <li class="nav">
+                    <a class="header_nav" href="#">Payment guide</a>
+                </li>
+            </ul>
+            <button class="btn btn_header">booking now</button>
+        </nav>
+    </div>
+    <!-- end header -->
+
+    <!-- booked flight -->
+    <div class="booked_flight-wrapper">
+        <span class="locations">
+            <span>
+                <h3 class="location">Da Nang(DAD)</h3>
+                <h3 class="date">Fri, 22 Mar, 2022</h3>
+            </span>
+            <img class="icon-switch" src="../Assets/Icons//icon-exchange.svg" alt="icon switch">
+            <span>
+                <h3 class="location">Sai Gon (SGN)</h3>
+                <h3 class="date">Fri, 22 Mar, 2022</h3>
+            </span>
+        </span>
+        <span class="flight_type">
+            <span class="selected_option">Round trip</span>
+            <span class="selected_option">2 Adults, 1 Children</span>
+            <span class="selected_option">Business class</span>
+        </span>
+        <button class="btn change_flight-btn">
+            Chage Flight
+        </button>
+    </div>
+
+
+    <div class="tickets-wrapper">
+        <div class="list_tickets">
+            <div class="filter_tickets">
+                <p>Filter</p>
+                <select class="dropdown" name="" id="">
+                    <option value="1">Transit</option>
+                </select>
+                <select class="dropdown" name="" id="">
+                    <option value="1">Time</option>
+                </select>
+                <select class="dropdown" name="" id="">
+                    <option value="1">Airline</option>
+                    <option value="1">Bus</option>
+                </select>
+                <select class="dropdown" name="" id="">
+                    <option value="1">Low Price</option>
+                    <option value="1">High Price</option>
+                </select>
+            </div>
+            <ul class="tickets">
+                <li class="ticket">
+                    <div class="ticket_sumary">
+                        <span class="brand">
+                            <img src="../Assets/Images/bamboo-logo.png" alt="bamboo logo" class="logo">
+                            <p class="name">BAMBOO AIRWAYS</p>
+                        </span>
+                        <div class="flight_infor">
+                            <span class="flight_duration">
+                                <span class="start">
+                                    <p class="time">21:40</p>
+                                    <p class="tag">DAD</p>
+                                </span>
+                                <span class="duration">
+                                    <p>1H 30m</p>
+                                    <span class="duration_decor"></span>
+                                    <p>Direct</p>
+                                </span>
+                                <span class="end">
+                                    <p class="time">21:40</p>
+                                    <p class="tag">DAD</p>
+                                </span>
+                            </span>
+                            <span class="stuffs">
+                                <span class="stuff">
+                                    <img src="../Assets/Icons/icon-bag.svg" alt="icon bag">
+                                    <p class="text">Baggage 20kg</p>
+                                </span>
+                                <span class="stuff">
+                                    <img src="../Assets/Icons/icon-food.svg" alt="icon food">
+                                    <p class="text">In-flight Meal</p>
+                                </span>
+                            </span>
+                            <span class="prices">
+                                <p>1,326,000vnd</p>
+                                <p>1,320,000vnd</p>
+                            </span>
+                        </div>
+                        <button class="btn ticket-btn">Choose</button>
+                    </div>
+                    <span class="divider">
+                        <span class="divider_tag">Flight detail</span>
+                        <span class="divider_tag">Fare infor</span>
+                        <span class="divider_decor"></span>
+                    </span>
+                    <div class="ticket_detail">
+                        <span class="conditions">
+                            <p class="title">Conditions</p>
+                            <span class="brand">
+                                <img src="../Assets/Images/bamboo-logo.png" alt="">
+                                <span>
+                                    <p class="name title">Bamboo airway</p>
+                                    <p class="code">QH-183 Economy</p>
+                                </span>
+                            </span>
+
+                            <span class="checkin">
+                                <div class="location">
+                                    <p class="location_name">Da Nang</p>
+                                    <p class="description">Economy</p>
+                                </div>
+                                <span class="duration_decor"></span>
+                                <div class="location">
+                                    <p class="location_name">Ho Chi Minh City</p>
+                                </div>
+                            </span>
+
+                            <p class="">Non-refundable</p>
+                        </span>
+                        <span class="price_details">
+                            <p class="title">Price Details</p>
+                            <div class="price_cal">
+                                <div class="cal_title">
+                                    <p class="price_text">Adult Basic Fare(x1)</p>
+                                    <p class="price_text">Tax</p>
+                                    <p class="price_text">Regular Total Price</p>
+                                    <p class="price_text price_text-color">Save</p>
+                                </div>
+                                <div class="cal_val">
+                                    <p class="price_text price_text-bold">1,326,000vnd</p>
+                                    <p class="price_text">included</p>
+                                    <p class="price_text">1,326,000vnd</p>
+                                    <p class="price_text">-4,000vnd</p>
+                                </div>
+                            </div>
+                            <div class="price_cal price_total">
+                                <div class="cal_title">
+                                    <p class="price_text">You pay</p>
+                                </div>
+                                <div class="cal_val">
+                                    <p class="price_text price_text-color">1,322,000vnd</p>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="selected_tickets">
+            <p class="ticket_title ticket_sm-header">Your flight</p>
+            <ul class="tickets_sm">
+                <li class="ticket_sm">
+                    <span class="wrapper-col">
+                        <div class="flight_date">
+                            <div class="flight_num">01</div>
+                            <div class="flight_infor-wrap">
+                                <p class="text">Fri, 20 Mar, 2022</p>
+                                <p class="text-bold">Da Nang - Ho Chi Minh</p>
+                            </div>
+                        </div>
+                        <span class="brand">
+                            <img src="../Assets/Images/bamboo-logo.png" alt="">
+                            <span>
+                                <p class="name title">Bamboo airway</p>
+                                <a href="#" class="code">Details</a>
+                            </span>
+                        </span>
+                        <span class="flight_duration">
+                            <span class="start">
+                                <p class="time">21:40</p>
+                                <p class="tag">DAD</p>
+                            </span>
+                            <span class="duration">
+                                <p>1H 30m</p>
+                                <span class="duration_decor"></span>
+                                <p>Direct</p>
+                            </span>
+                            <span class="end">
+                                <p class="time">21:40</p>
+                                <p class="tag">DAD</p>
+                            </span>
+                        </span>
+                        <button class="btn flight_sm-btn">Change departure flight</button>
+                    </span>
+                </li>
+                <li class="ticket_sm">
+                    <span>
+                        <div class="flight_date">
+                            <div class="flight_num">01</div>
+                            <div class="flight_infor-wrap">
+                                <p class="text">Fri, 20 Mar, 2022</p>
+                                <p class="text-bold">Da Nang - Ho Chi Minh</p>
+                            </div>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+            <div class="ticket_sm-footer">
+                <p class="text text-bold">Subtotal</p>
+                <p class="text text-color">1,322,000vnd</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer_wrapper">
+        <span class="footer-left">
+            <span>
+                <img class="footer-icon" src="../../Assets/Icons//icon-call.svg" alt="icon call">
+                <p>Call us: +84000000000</p>
+            </span>
+            <span>
+                <img class="footer-icon" src="../../Assets/Icons//icon-email.svg" alt="icon email">
+                <p>Email: device@sub-domain.top-domain</p>
+            </span>
+        </span>
+        <span class="footer-right">
+            <p>Folow us</p>
+            <span></span>
+            <img class="footer-icon" src="../../Assets/Icons//icon-facebook.svg" alt="icon facebook">
+            <img class="footer-icon" src="../../Assets/Icons//icon-instagram.svg" alt="icon instagram">
+        </span>
+    </div>
+    <!-- end footer -->
+
+    <script src="../Utils/chagePage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+/* header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 170px;
+  height: 80px;
+}
+
+.navs {
+  list-style-type: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+.navs .nav a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Outfit", sans-serif;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.app-logo {
+  height: 22px;
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  background: #4d46fa;
+  border-radius: 12px;
+  color: #fff;
+  outline: none;
+  border: 0px;
+}
+
+/* end header */
+
+/* banner */
+.banner {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.banner-title {
+  padding-left: 170px;
+  transform: translateY(-100px);
+  background-color: transparent;
+}
+
+.banner-title p {
+  font-size: 72px;
+  font-weight: 100;
+  width: 30vw;
+  color: #fff;
+}
+
+.banner-title .title-bold {
+  font-weight: 600;
+  color: #4d46fa;
+}
+
+.ticket-wrapper {
+  position: absolute;
+  width: calc(100% - 300px);
+  padding: 30px 30px 50px 30px;
+  margin: 0px 150px;
+  left: 0px;
+  bottom: -50px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 30px rgba(77, 70, 250, 0.1);
+}
+
+.ticket_card-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.ticket-filter {
+  margin-bottom: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.ticket_card {
+  position: relative;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ticket_card strong {
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.ticket_card-right strong {
+  text-align: end;
+}
+
+.ticket_card .card-after {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  fill: #000 !important;
+}
+
+.time_picker {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  width: 50%;
+}
+
+.icon-location_exchange {
+  width: 20px;
+}
+
+.ticket_card {
+  flex: 1;
+}
+
+.flight_picker {
+  display: flex;
+  width: 50%;
+}
+
+.flight_picker > img {
+  width: 20px;
+}
+
+.dropdown {
+  outline: none;
+  border: none;
+}
+
+.btn-search_flight {
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+}
+/* end banner */
+
+/* footer */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 30px 30px 30px;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  column-gap: 30px;
+}
+
+.footer-left span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.footer-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.footer-right span {
+  width: 40px;
+  height: 1.5px;
+  background-color: #000;
+}
+/* end footer */
+
+.datetime_input {
+  border: 0px;
+  outline: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  color: #4d46fa;
+  opacity: 1;
+  margin: 0px 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.1) sepia(100%) saturate(10000%) hue-rotate(240deg);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+
+.text-gray {
+    opacity: 0.5;
+}
+
+.text-color {
+    color: #4d46fa;
+    opacity: 1;
+}
+
+.text-bold {
+    font-weight: 600;
+    font-size: 14px;
+}
