@@ -49,7 +49,7 @@
         </span>
 
         <div class="ticket-wrapper">
-            <button onclick="changePage('./Pages/booking.html')" class="btn btn-search_flight">Search flight</button>
+            <button onclick="validateDatePicker()" class="btn btn-search_flight">Search flight</button>
             <div class="ticket-filter">
                 <div class="">
                     <input type="checkbox" name="" id="routes">
@@ -128,7 +128,23 @@
         </span>
     </div>
     <!-- end footer -->
+
+
+    <!-- popup -->
+    <div id="popup_wrapper-validate_date" class="popup-wrapper">
+        <div class="popup-invalid_date_picker">
+            <div class="popup_body">
+                <p class="text">Date picked is invalid, choose again.</p>
+            </div>
+            <div class="popup_footer">
+                <button class="btn" onclick="closeValidateDatePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- end popup -->
+
     <script src="./Utils/chagePage.js"></script>
     <script src="./Utils/changeHeaderBackground.js"></script>
+    <script src="./Utils/validateDatePicker.js"></script>
 </body>
 </html>

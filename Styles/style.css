@@ -274,3 +274,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 600;
     font-size: 14px;
 }
+
+/* pop up */
+.popup-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-invalid_date_picker {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #00000030;
+    z-index: 10;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.popup-invalid_date_picker .text {
+    font-size: 14px;
+}
