@@ -70,27 +70,40 @@
         <div class="list_tickets">
             <div class="filter_tickets">
                 <p>Filter</p>
-                <select class="dropdown" name="" id="">
-                    <option value="1">Transit</option>
-                </select>
-                <select class="dropdown" name="" id="">
-                    <option value="1">Time</option>
-                </select>
-                <select class="dropdown" name="" id="">
-                    <option value="1">Airline</option>
-                    <option value="1">Bus</option>
-                </select>
-                <select class="dropdown" name="" id="">
-                    <option value="1">Low Price</option>
-                    <option value="1">High Price</option>
-                </select>
+                <div class="dropdown-bg">
+                    <select class="dropdown" name="" id="">
+                        <option value="1">Transit</option>
+                        <option value="1">Transit 2</option>
+                        <option value="1">Transit 3</option>
+                    </select>
+                </div>
+                <div class="dropdown-bg">
+                    <select class="dropdown" name="" id="">
+                        <option value="1">Time</option>
+                        <option value="1">Time 1</option>
+                        <option value="1">Time 2</option>
+                    </select>
+                </div>
+                <div class="dropdown-bg">
+                    <select class="dropdown" name="" id="">
+                        <option value="1">Airline</option>
+                        <option value="1">Bus</option>
+                    </select>
+                </div>
+                
+                <div class="dropdown-bg">
+                    <select class="dropdown" name="" id="">
+                        <option value="1">Low Price</option>
+                        <option value="1">High Price</option>
+                    </select>
+                </div>
             </div>
             <ul class="tickets">
-                <li class="ticket">
+                <li class="ticket ticket_card_indentity" onblur="closeTicketInfor()">
                     <div class="ticket_sumary">
                         <span class="brand">
                             <img src="../Assets/Images/bamboo-logo.png" alt="bamboo logo" class="logo">
-                            <p class="name">BAMBOO AIRWAYS</p>
+                            <p class="name text-black">BAMBOO AIRWAYS</p>
                         </span>
                         <div class="flight_infor">
                             <span class="flight_duration">
@@ -126,7 +139,7 @@
                         <button class="btn ticket-btn">Choose</button>
                     </div>
                     <span class="divider">
-                        <span class="divider_tag">Flight detail</span>
+                        <span class="divider_tag" onclick="viewFlightInfor(0)">Flight detail</span>
                         <span class="divider_tag" onclick="viewInfor(0)">Fare infor</span>
                         <span class="divider_decor"></span>
                     </span>
@@ -136,7 +149,7 @@
                             <span class="brand">
                                 <img src="../Assets/Images/bamboo-logo.png" alt="">
                                 <span>
-                                    <p class="name title">Bamboo airway</p>
+                                    <p class="name title text-black">Bamboo airway</p>
                                     <p class="code">QH-183 Economy</p>
                                 </span>
                             </span>
@@ -180,6 +193,54 @@
                             </div>
                         </span>
                     </div>
+
+                    <div id="ticket_infor_detail" class="ticket_infor_detail" style="display: none;">
+                        <div class="flight_duration">
+                            <div class="time">
+                                <span>
+                                    <p class="text">21:40</p>
+                                    <p class="text description text-gray">11 Feb</p>
+                                </span>
+                                <p class="text">1h 30m</p>
+                                <span>
+                                    <p class="text">21:40</p>
+                                    <p class="text description text-gray">11 Feb</p>
+                                </span>
+                            </div>
+                            <span class="decor"></span>
+                            <div class="location">
+                                <span>
+                                    <p class="text text-bold">Da Nang (DAD)</p>
+                                    <p class="text">Da Nang Airport</p>
+                                </span>
+                                <span>
+                                    <p class="text text-bold">Ho Chi Minh City (SGN)</p>
+                                    <p class="text">Tan Son Nhat Intl</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="seat_infor">
+                            <span class="brand">
+                                <img src="../Assets/Images/bamboo-logo.png" alt="">
+                                <span>
+                                    <p class="name title text-black">Bamboo airway</p>
+                                    <p class="code">QH-183 Economy</p>
+                                </span>
+                            </span>
+                            <div class="infor">
+                                <span class="stuffs">
+                                    <p class="text">Baggage 20kg</p>
+                                    <p class="text">In-flight Meal</p>
+                                    <p class="text">In-flight Entertainment</p>
+                                </span>
+                                <span class="stuffs">
+                                    <p class="text">Aircarft Airbus A321</p>
+                                    <p class="text">Seat layout 3-3</p>
+                                    <p class="text">Seat pitch 29 inches (standard)</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -189,7 +250,7 @@
                 <li class="ticket_sm">
                     <span class="wrapper-col">
                         <div class="flight_date">
-                            <div class="flight_num">01</div>
+                            <div class="flight_num flight_num-gray">01</div>
                             <div class="flight_infor-wrap">
                                 <p class="text">Fri, 20 Mar, 2022</p>
                                 <p class="text-bold">Da Nang - Ho Chi Minh</p>
@@ -198,8 +259,8 @@
                         <span class="brand">
                             <img src="../Assets/Images/bamboo-logo.png" alt="">
                             <span>
-                                <p class="name title">Bamboo airway</p>
-                                <a href="#" class="code">Details</a>
+                                <p class="name title text-black">Bamboo airway</p>
+                                <a href="#" class="description">Details</a>
                             </span>
                         </span>
                         <span class="flight_duration">

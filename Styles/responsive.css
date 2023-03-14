@@ -178,6 +178,17 @@
   }
 }
 
+@media only screen and (max-width: 825px) {
+    .ticket_infor_detail {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .ticket_infor_detail .flight_duration {
+        height: 125px;
+    }
+}
+
 @media only screen and (max-width: 620px) {
     .datetime_input {
         font-size: 16px;
@@ -190,6 +201,10 @@
 
     .banner-title {
         padding-left: 30px;
+    }
+
+    .banner-title p {
+        font-size: 50px;
     }
 }
 

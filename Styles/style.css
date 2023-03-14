@@ -258,7 +258,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    opacity: 0.5;
 }
 
 .text-gray {
@@ -273,6 +272,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-bold {
     font-weight: 600;
     font-size: 14px;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.description {
+    font-size: 12px !important;
+}
+
+.text-black {
+    color: #000 !important;
+    opacity: 1;
 }
 
 /* pop up */

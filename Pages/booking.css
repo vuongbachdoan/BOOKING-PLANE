@@ -143,6 +143,12 @@ body {
   padding: 8px 15px;
 }
 
+.dropdown-bg {
+  background-color: #fff;
+  border-radius: 12px;
+  padding-right: 12px;
+}
+
 .filter_tickets .dropdown option {
   display: block !important;
   height: 34px;
@@ -478,6 +484,9 @@ body {
   line-height: 30px;
   text-align: center;
 }
+.flight_num-gray {
+  background-color: #979797;
+}
 .flight_date {
   display: flex;
   column-gap: 12px;
@@ -530,3 +539,90 @@ body {
   padding: 20px;
 }
 /* end ticket small */
+
+/* ticket information */
+.ticket_infor_detail {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.ticket_infor_detail .time,
+.ticket_infor_detail .location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ticket_infor_detail .decor {
+  height: calc(100% - 30px);
+  width: 1px;
+  background-color: #4d46fa;
+  position: relative;
+}
+
+.ticket_infor_detail .decor::before {
+  content: '';
+  background-color: #4d46fa;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 7px;
+}
+
+.ticket_infor_detail .decor::after {
+  content: '';
+  background-color: #4d46fa;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 7px;
+}
+
+.ticket_infor_detail  .brand {
+  column-gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.ticket_infor_detail  .brand > img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.ticket_infor_detail  .brand .code {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.seat_infor {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #F4F2F9;
+  flex: 1;
+}
+
+.seat_infor .infor {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+}
+
+.seat_infor .stuffs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+/* end ticket information */
